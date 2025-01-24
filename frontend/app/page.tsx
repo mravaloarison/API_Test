@@ -7,14 +7,15 @@ export default function Home() {
 	const [response, setResponse] = useState("");
 
 	function ButtonTest() {
-		// Make a request to https://zany-goggles-wq5pxqw94jpf5rv4-5000.app.github.dev/
-
-		console.log("ButtonTest pressed");
-		fetch("https://zany-goggles-wq5pxqw94jpf5rv4-5000.app.github.dev/")
+		fetch("http://127.0.0.1:5000/hello_gemini")
 			.then((response) => response.json())
 			.then((data) => {
-				// setResponse(data.message);
 				console.log(data);
+				if (data.ai_response) {
+					setResponse(data.ai_response);
+				} else {
+					setResponse("No message received");
+				}
 			});
 	}
 

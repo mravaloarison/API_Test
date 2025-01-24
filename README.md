@@ -1,27 +1,54 @@
 # API_Test
 
--   Preparation
+## Backend 
 
-```python
-
-python -m venv {name of environment}
-
-source {name of environment}/bin/activate
-
-# install dependencies
-
-# EXPORT API_KEY = jaskfaksl (before running the script)
-
-# run script
-flask run
-
+### Clone repository
+```bash
+git clone [repository link]
 ```
 
--   Hide API KEY
+### Setup virtual environment
+- Change directory to the project folder
+```bash
+cd folder_name/backend
+```
+- Create a virtual environment
+```bash
+python -m venv .env
+```
+- Activate the virtual environment
+```bash
+source .env/bin/activate
+```
 
-```python
-import os
+### Install dependencies
+```bash 
+pip install -r requirements.txt
+```
+
+### Set up API KEYS
+```bash
+export API_KEY=[API_KEY]
+```
+
+### Run the server
+```bash
+flask run --debug 
+```
 
 
-API_KEY = os.getenv("API_KEY")
+## Frontend
+- Change directory to the project folder
+```bash
+cd folder_name/frontend
+```
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run the server
+```bash
+npm run dev
 ```
