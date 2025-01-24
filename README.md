@@ -15,14 +15,9 @@ cd folder_name/backend
 - Create a virtual environment
 ```bash
 python -m venv .env
-```
-- Activate the virtual environment
-```bash
-source .env/bin/activate
-```
 
-### Install dependencies
-```bash 
+source .env/bin/activate
+
 pip install -r requirements.txt
 ```
 
@@ -46,9 +41,6 @@ cd folder_name/frontend
 ### Install dependencies
 ```bash
 npm install
-```
 
-### Run the server
-```bash
 npm run dev
 ```
