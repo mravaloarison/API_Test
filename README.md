@@ -4,11 +4,9 @@
 
 ### technologies
 
-[Flask](https://flask.palletsprojects.com/en/stable/quickstart/)
-
-[Gemini API](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
-
-[Pokemon API](https://pokeapi.co/)
+-   [Flask](https://flask.palletsprojects.com/en/stable/quickstart/)
+-   [Gemini API](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
+-   [Pokemon API](https://pokeapi.co/)
 
 ### Clone repository
 
