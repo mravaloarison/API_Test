@@ -37,4 +37,4 @@ def all_pokemons():
 
     my_pokemons = response.json()
 
-    return jsonify({"first_pokemon": my_pokemons})
+    return jsonify({"result": my_pokemons["results"]})
